@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* background-color: #44c4e7;
+  background-image: linear-gradient(to bottom right, #44c4e7, #1e0ddf); */
+
+  color: #fff;
+  /* font-family: ; */
+  line-height: 1.5;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("./img/berlin-2676497_1920.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.picture-wrapper {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  display: inline-block;
+  padding: 20px 35px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 99999999px;
+
+  color: rgb(22, 78, 100);
+  background-color: #fff;
+
+  font-size: 0.9rem;
+  text-shadow: none;
+
+  transform-origin: 0 0;
+  transform: scale(1);
+  transition: background-color 0.4s ease, transform 0.4s ease,
+    olor 0.4s ease out;
+  will-change: background-color, transform, color;
+}
+
+.role,
+.button {
+  font-family: ;
+  letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about {
+  text-align: center;
+}
