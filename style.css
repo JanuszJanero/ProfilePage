@@ -71,7 +71,7 @@ a {
 
 .role,
 .button {
-  font-family: ;
+  /* font-family: ; */
   letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -79,4 +79,97 @@ a {
 
 .about {
   text-align: center;
+}
+.info-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.info-wrapper::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 4rem);
+  bottom: -10px;
+  height: 1px;
+  /* background-color: rgb(); */
+  width: 8rem;
+}
+
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+}
+
+.role {
+  display: block;
+  color: #ffdd44;
+  font-size: 0.75rem;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.contact {
+  margin-top: 25px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.socials li {
+  height: 25px;
+  width: 25px;
+  margin-right: 15px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  /* opacity: 0.5;
+  will-change: opacity; */
+}
+
+@media screen and (min-width: 1024px) {
+  .main-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .picture-wrapper {
+    order: 1;
+  }
+
+  .profile-photo {
+    width: 320px;
+    height: 320px;
+  }
+
+  .info-wrapper::after {
+    bottom: -15px;
+    left: 0;
+  }
+
+  .about {
+    text-align: left;
+  }
+  .description {
+    margin-top: 30px;
+  }
+  .socials {
+    justify-content: flex-start;
+  }
+
+  .button:hover {
+    background-color: #ffdd44;
+    color: #000;
+    transform: scale(1.05);
+  }
 }
